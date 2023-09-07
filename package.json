@@ -16,19 +16,22 @@
   },
   "keywords": [],
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.29.0",
     "@types/node": "^20.2.0",
+    "@typescript-eslint/eslint-plugin": "5.29.0",
+    "esbuild-loader": "^3.0.1",
+    "eslint": "^8.42.0",
     "fast-glob": "^3.2.12",
     "glob": "^7.2.3",
     "minimist": "^1.2.8",
     "rollup-plugin-livereload": "^2.0.5",
-    "esbuild-loader": "^3.0.1",
-    "eslint": "^8.42.0",
     "sass": "^1.62.1",
-    "siyuan": "0.8.1",
+    "siyuan": "0.8.3",
     "typescript": "^5.0.4",
     "vite": "^4.3.7",
     "vite-plugin-static-copy": "^0.15.0",
     "vite-plugin-zip-pack": "^1.0.5"
+  },
+  "dependencies": {
+    "@msgpack/msgpack": "3.0.0-beta2"
   }
 }

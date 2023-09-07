@@ -1,7 +1,7 @@
 {
-  "name": "plugin-sample",
+  "name": "export-csv-for-fsrs-optimizer",
   "author": "Vanessa",
-  "url": "https://github.com/siyuan-note/plugin-sample",
+  "url": "https://github.com/mdzz2048/export-csv-for-fsrs-optimizer",
   "version": "0.2.1",
   "minAppVersion": "2.10.1",
   "backends": ["windows", "linux", "darwin"],
