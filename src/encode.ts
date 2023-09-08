@@ -23,10 +23,10 @@ function convertToCSV(data: TMessagepack[]): string {
   const headers = ['card_id', 'review_time', 'review_rating', 'review_state', 'review_duration'];
   const rows = data.map(obj => [
     obj.CardID,
-    obj.Reviewed,
+    obj.Reviewed * 1000,
     obj.Rating,
     obj.State, 
-    5
+    null
   ]);
   return [headers.join(','), ...rows.map(row => row.join(','))].join('\n');
 }
