@@ -1,8 +1,8 @@
 {
-  "name": "siyuan-plugin-sample",
+  "name": "export-csv-for-fsrs-optimizer",
   "version": "0.0.1",
   "type": "module",
-  "description": "This is a sample plugin for Siyuan (https://b3log.org/siyuan)",
+  "description": "This is a plugin for Siyuan (https://b3log.org/siyuan)",
   "repository": "",
   "homepage": "",
   "author": "mdzz2048",
