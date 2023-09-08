@@ -67,4 +67,14 @@ declare module "sy-dtype" {
         previousID: BlockId;
         retData: null;
     }
+
+    export type TMessagepack = {
+        ID: string,
+        CardID: string,
+        Rating: number,
+        ScheduledDays: number,
+        ElapsedDays: number,
+        Reviewed: number,
+        State: number
+    }
 }
