@@ -1,8 +1,8 @@
 {
-  "name": "export-csv-for-fsrs-optimizer",
+  "name": "siyuan-plugin-export-revlog",
   "author": "mdzz2048",
-  "url": "https://github.com/mdzz2048/export-csv-for-fsrs-optimizer",
-  "version": "0.0.1",
+  "url": "https://github.com/mdzz2048/siyuan-plugin-export-revlog",
+  "version": "0.0.2",
   "minAppVersion": "2.10.1",
   "backends": ["windows", "linux", "darwin"],
   "frontends": ["desktop"],

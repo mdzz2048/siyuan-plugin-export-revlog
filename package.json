@@ -1,6 +1,6 @@
 {
-  "name": "export-csv-for-fsrs-optimizer",
-  "version": "0.0.1",
+  "name": "siyuan-plugin-export-revlog",
+  "version": "0.0.2",
   "type": "module",
   "description": "This is a plugin for Siyuan (https://b3log.org/siyuan)",
   "repository": "",
