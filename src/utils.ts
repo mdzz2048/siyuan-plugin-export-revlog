@@ -19,7 +19,7 @@ import { decode } from "@msgpack/msgpack"
 import { getFileBuffer, putFile, readDir } from "./siyuan-api";
 import { TMessagepack } from "sy-dtype";
 
-export const DEFAULT_SAVE_PATH = "/data/public/export-csv-for-fsrs-optimizer"
+export const DEFAULT_SAVE_PATH = "/data/public/siyuan-plugin-export-revlog"
 
 export function convertToCSV(data: TMessagepack[]): string {
   const headers = ['card_id', 'review_time', 'review_rating', 'review_state', 'review_duration'];
