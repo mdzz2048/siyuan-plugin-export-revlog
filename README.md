@@ -1,6 +1,6 @@
 # 插件功能
 
-导出思源复习记录到 `/data/public/export-csv-for-fsrs-optimizer` 目录下
+导出思源复习记录到 `/data/public/siyuan-plugin-export-revlog` 目录下
 
 后续可以使用 [open-spaced-repetition/fsrs-optimizer](https://github.com/open-spaced-repetition/fsrs-optimizer) 优化器优化 FSRS 算法
 
