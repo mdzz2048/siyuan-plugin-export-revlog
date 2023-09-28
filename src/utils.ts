@@ -28,7 +28,7 @@ export function convertToCSV(data: TMessagepack[]): string {
     obj.Reviewed * 1000,
     obj.Rating,
     obj.State, 
-    null
+    0
   ]);
   return [headers.join(','), ...rows.map(row => row.join(','))].join('\n');
 }
