@@ -1,42 +1,56 @@
-# 插件功能
+# Plug Functionality
 
-导出思源复习记录到 `/data/public/siyuan-plugin-export-revlog` 目录下
+Export the Siyuan Review to the `/data/public/siyuan-plugin-export-revlog' directory
 
-后续可以使用 [open-spaced-repetition/fsrs-optimizer](https://github.com/open-spaced-repetition/fsrs-optimizer) 优化器优化 FSRS 算法
+You can then optimize the FSRS algorithm using the [open-spaced-repetition FSRS-optimizer](https://github.com/open-spaced-repetition/FSRS-optimizer ) optimizer
 
-# 使用查看日志优化 FSRS
+# Optimize FSRS with revlog
 
-**安装**
+## Option 1: (recommend) 
 
-安装 [Python](https://www.python.org/downloads/)，并使用以下命令安装软件包：
+Open [fsrs4anki](https://huggingface.co/spaces/open-spaced-repetition/fsrs4anki_app). Upload the CSV file, select Timezone, click optimize to get optimization parameters.
+
+![FSRS4Anki-使用界面](./public/image-3.png)
+
+**报错解决方案**
+
+If there is an error indicating insufficient training data, please refer to [here](https://github.com/open-spaced-repetition/fsrs-optimizer/issues/13) to check revlog.csv file compliance.
+
+![FSRS4Anki-训练数据不足](./public/image-4.png)
+
+## Option 2:
+
+**Installation**
+
+Install [Python](https://www.Python.org/downloads/) and install the package using the following command:
 
 ```sh
 python -m pip install fsrs-optimizer
 ```
 
-应定期升级以确保拥有最新版本的 FSRS 优化器：
+You should update regularly to ensure that you have the latest version of the FSRS Optimizer:
 
 ```sh
 python -m pip install fsrs-optimizer --upgrade
 ```
 
-**优化**
+**Optimization**
 
-在复习记录导出目录下运行：
+Run in the Review Record Export Directory:
 
 ```sh
 python -m fsrs_optimizer "revlog.csv"
 ```
 
-加 `-y` [跳过交互输入参数](https://github.com/open-spaced-repetition/fsrs-optimizer/issues/13#issuecomment-1670571816)
+Add `-y` [Interactive input parameters are skipped](https://github.com/open-spaced-repetition/fsrs-optimizer/issues/13#issuecomment-1670571816)
 
 ```sh
 python -m fsrs_optimizer "revlog.csv" -y
 ```
 
 
-**预期功能**
+**Expected function**
 
-![预期功能-参数输入](./public//image-1.png)
+![预期功能-参数输入](./public/image-1.png)
 
-![预期功能-训练成功](./public//image-2.png)
+![预期功能-训练成功](./public/image-2.png)

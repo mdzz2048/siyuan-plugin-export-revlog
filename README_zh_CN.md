@@ -6,6 +6,20 @@
 
 # 使用查看日志优化 FSRS
 
+## 方案一：（推荐）
+
+打开[fsrs4anki_app](https://huggingface.co/spaces/open-spaced-repetition/fsrs4anki_app)。上传 CSV 文件，选择 Timezone，点击优化即可获得优化参数。
+
+![FSRS4Anki-使用界面](./public/image-3.png)
+
+**报错解决方案**
+
+如果出现提示训练数据不足的报错，请参考[这里](https://github.com/open-spaced-repetition/fsrs-optimizer/issues/13)检查 revlog.csv 文件是否符合要求。
+
+![FSRS4Anki-训练数据不足](./public/image-4.png)
+
+## 方案二：
+
 **安装**
 
 安装 [Python](https://www.python.org/downloads/)，并使用以下命令安装软件包：
@@ -34,8 +48,9 @@ python -m fsrs_optimizer "revlog.csv"
 python -m fsrs_optimizer "revlog.csv" -y
 ```
 
+
 **预期功能**
 
-![预期功能-参数输入](./public//image-1.png)
+![预期功能-参数输入](./public/image-1.png)
 
-![预期功能-训练成功](./public//image-2.png)
+![预期功能-训练成功](./public/image-2.png)
